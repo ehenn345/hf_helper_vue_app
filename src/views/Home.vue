@@ -3,6 +3,7 @@
     <h1>{{ message }}</h1>
     <a href="/signup">Signup</a>
     <a href="/login">Login</a>
+    <a href="/logout">Logout</a>
   </div>
 </template>
 
