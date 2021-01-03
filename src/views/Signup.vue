@@ -14,6 +14,14 @@
         <input type="email" class="form-control" v-model="email">
       </div>
       <div class="form-group">
+        <label>Sodium Limit (mg)</label>
+        <input type="integer" class="form-control" v-model="sodiumLimit">
+      </div>
+      <div class="form-group">
+        <label>Fluid Limit (ml)</label>
+        <input type="integer" class="form-control" v-model="fluidLimit">
+      </div>
+      <div class="form-group">
         <label>Password:</label>
         <input type="password" class="form-control" v-model="password">
       </div>
@@ -36,6 +44,8 @@ export default {
       email: "",
       password: "",
       passwordConfirmation: "",
+      sodiumLimit: "",
+      fluidLimit: "",
       errors: [],
     };
   },
@@ -44,6 +54,8 @@ export default {
       var params = {
         name: this.name,
         email: this.email,
+        sodium_limit: this.sodiumLimit,
+        fluid_limit: this.fluidLimit,
         password: this.password,
         password_confirmation: this.passwordConfirmation,
       };
