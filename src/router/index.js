@@ -7,7 +7,7 @@ import Logout from "../views/Logout.vue";
 import WeightsIndex from '../views/WeightsIndex.vue'
 import WeightsNew from '../views/WeightsNew.vue'
 import SodiaIndex from '../views/SodiaIndex.vue'
-
+import SodiaNew from '../views/SodiaNew.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -54,6 +54,11 @@ const routes = [
     name: 'sodia-index',
     component: SodiaIndex,
   },
+  {
+    path: "/sodia/new",
+    name: 'sodia-new',
+    component: SodiaNew,
+  }
 
 ];
 

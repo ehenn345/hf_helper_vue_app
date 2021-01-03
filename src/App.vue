@@ -5,7 +5,8 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/weights">Weights</router-link> |
       <router-link to="/weights/new">Add a weight</router-link> |
-      <router-link to="/sodia">Sodium</router-link>
+      <router-link to="/sodia">Sodium</router-link> |
+      <router-link to="/sodia/new">Input sodium</router-link>
     </div>
     <router-view/>
   </div>

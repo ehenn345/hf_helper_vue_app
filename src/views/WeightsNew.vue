@@ -33,6 +33,7 @@ export default {
       console.log("creating weight...");
       var params = {
         current_weight: this.current_weight,
+        date: this.date,
       };
       axios
         .post("/api/weights", params)
