@@ -6,6 +6,7 @@
       <p>{{weight.date}}</p>
       <p>weight difference from yesterday:{{weight.weight_difference}}</p>
       <p>weight gain/loss over the past week:{{weight.weekly_weight_difference}}</p></div>
+      
   </div>
 </template>
 

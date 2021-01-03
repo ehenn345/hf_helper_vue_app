@@ -4,7 +4,9 @@ import Home from '../views/Home.vue'
 import Signup from "../views/Signup.vue"
 import Login from "../views/Login.vue"
 import Logout from "../views/Logout.vue";
-import WeightsIndex from '../views/WeightsIndex.vue';
+import WeightsIndex from '../views/WeightsIndex.vue'
+import WeightsNew from '../views/WeightsNew.vue';
+import Datepicker from 'vuejs-datepicker';
 
 Vue.use(VueRouter)
 
@@ -41,6 +43,11 @@ const routes = [
     path: "/weights",
     name: 'weights-index',
     component: WeightsIndex,
+  },
+  {
+    path: "/weights/new",
+    name: 'weights-new',
+    component: WeightsNew,
   }
 
 ];
