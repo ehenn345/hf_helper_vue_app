@@ -1,12 +1,34 @@
 <template>
   <div class="weights-index">
-    <h1>{{ message }}</h1>
-    <div v-for="weight in weights">
-      <p>Weight: {{weight.current_weight}}</p>
-      <p>Date: {{weight.date}}</p>
-      <p>weight difference from yesterday:{{weight.weight_difference}}</p>
-      <p>weight gain/loss over the past week:{{weight.weekly_weight_difference}}</p></div>
-      
+    <!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<article v-for="weight in weights">
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">{{weight.date}}</a></h3>
+										<p>{{weight.current_weight}} lbs</p>
+                    <p>{{weight.weight_difference}}</p><br>
+                    <p>{{weight.weekly_weight_difference}}</p>
+									</header>
+								</article>
+								<article v-for="weight in weights">
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">{{weight.weight_difference}}</a></h3>
+										<p>feugiat amet tempus</p>
+									</header>
+								</article>
+								
+							</section>
+
+					</div>  
   </div>
 </template>
 
