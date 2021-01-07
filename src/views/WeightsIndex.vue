@@ -12,19 +12,12 @@
 									<header class="major">
 										<h3><a href="landing.html" class="link">{{weight.date}}</a></h3>
 										<p>{{weight.current_weight}} lbs</p>
+										<div v-if="weight===weights[0]">
                     <p>{{weight.weight_difference}}</p><br>
-                    <p>{{weight.weekly_weight_difference}}</p>
+                    <p>{{weight.weekly_weight_difference}}</p></div>
 									</header>
 								</article>
-								<article v-for="weight in weights">
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">{{weight.weight_difference}}</a></h3>
-										<p>feugiat amet tempus</p>
-									</header>
-								</article>
+								
 								
 							</section>
 

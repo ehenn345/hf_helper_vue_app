@@ -1,9 +1,19 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
-    <a href="/signup">Signup</a> |
-    <a href="/login">Login</a> |
-    <a href="/logout">Logout</a>
+     <!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Hello!</h1>
+							</header>
+							<div class="content">
+								<p>Welcome to your personal heart failure helper</p>
+								<ul class="actions">
+									<li><a href="/login" class="button">Log In</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
   </div>
 </template>
 
