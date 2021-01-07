@@ -13,7 +13,8 @@
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">{{sodium.input_sodium}} ml</a></h3>
-										<p>Total for the day: {{sodium.sodium_daily_total}} ml</p>
+                    <div v-if="sodium ===sodia[0]">
+										<p>Total for the day: {{sodium.sodium_daily_total}} ml</p></div>
 									</header>
 								</article>
 								

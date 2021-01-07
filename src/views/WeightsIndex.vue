@@ -12,6 +12,7 @@
 									<header class="major">
 										<h3><a href="landing.html" class="link">{{weight.date}}</a></h3>
 										<p>{{weight.current_weight}} lbs</p>
+										<br>
 										<div v-if="weight===weights[0]">
                     <p>{{weight.weight_difference}}</p><br>
                     <p>{{weight.weekly_weight_difference}}</p></div>
