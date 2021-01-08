@@ -9,14 +9,19 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Your Sodium</h1>
+										<h1>Your Sodium Page</h1>
 									</header>
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+									
                   <ul>
-                    <p>Daily total (mg): {{sodia[0] && sodia[0].sodium_daily_total}}</p>
-                    <p>{{message2}}</p>
+                    <h1>Daily total: {{sodia[0] && sodia[0].sodium_daily_total}} mg</h1>
+                    
+                    <span class="image main"><img v-if="sodia[0] && sodia[0].sodium_daily_total > 1500" src="images/too much salt.jpg" alt="" />
+                    <img v-else-if="sodia[0] && sodia[0].sodium_daily_total < 1500" src="images/keepitup.jpg" alt="" />
+                    <img v-else src="images/hfimage.jpg"></span>
+                    <h2>{{message2}}</h2>
                     <li v-for="sodium in sodia">
                        {{sodium.input_sodium}} ml</li></ul>
+                       
 									<p></p>
 								</div>
 							</section>
