@@ -1,5 +1,6 @@
 <template>
   <div class="weights-new">
+    
     <h1>Add a weight</h1>
     <form v-on:submit.prevent="createWeight()">
       <ul>

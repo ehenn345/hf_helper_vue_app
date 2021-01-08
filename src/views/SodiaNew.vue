@@ -5,10 +5,10 @@
       <ul>
         <li v-for="error in errors"> {{error}}</li>
       </ul>
-      <p>Quantity: <input type="integer" v-model="quantity"></p>
+      <p>Quantity: <input type="text" v-model="quantity"></p>
       <p>Measure: <input type="text" v-model="measure"></p>
       <p>Food: <input type="text" v-model="food"></p>
-      <p>Sodium: <input type="integer" v-model="input_sodium"></p>
+      <p>Sodium (mg): <input type="text" v-model="input_sodium"></p>
       <p>Date: <input type="date" v-model="date"></p></form>
       <button v-on:click="createSodia()">Submit</button>
   </div>
