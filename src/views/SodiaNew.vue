@@ -43,6 +43,7 @@ export default {
         measure: this.measure,
         food: this.food,
         input_sodium: this.input_sodium,
+        date: this.date,
       };
       axios
         .post("/api/sodia", params)
