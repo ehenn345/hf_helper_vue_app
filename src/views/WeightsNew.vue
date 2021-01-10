@@ -6,8 +6,8 @@
       <ul>
         <li v-for="error in errors"> {{error}}</li>
       </ul>
-      <p>Weight: <input type="integer" v-model="current_weight"></p>
-      <p>Date: <input type="date" v-model="date"></p></form>
+      <p>Weight (lbs): <input type="integer" v-model="current_weight" v-bind:style= "{color: activeColor}"></p>
+      <p>Date: <input type="date" v-model="date" v-bind:style= "{color: activeColor}"></p></form>
       <button v-on:click="createWeight()">Submit</button>
   </div>
 </template>
@@ -26,6 +26,7 @@ export default {
       current_weight: "",
       errors: [],
       date: "",
+      activeColor: "black",
     };
   },
   created: function () {},

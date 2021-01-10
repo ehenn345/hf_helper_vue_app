@@ -9,7 +9,7 @@
       <p>Measure: <input type="text" v-model="measure"></p>
       <p>Food: <input type="text" v-model="food"></p>
       <p>Sodium (mg): <input type="text" v-model="input_sodium"></p>
-      <p>Date: <input type="date" v-model="date"></p></form>
+      <p>Date: <input type="date" v-model="date" v-bind:style="{color: activeColor}"></p></form>
       <button v-on:click="createSodia()">Submit</button>
   </div>
 </template>
@@ -31,6 +31,7 @@ export default {
       quantity: "",
       measure: "",
       food: "",
+      activeColor: "black",
     };
   },
   created: function () {},
