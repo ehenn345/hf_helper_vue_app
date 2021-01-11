@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: #fa9c85;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1914,7 +1914,7 @@ input, select, textarea {
 		background: rgba(212, 212, 255, 0.035);
 		border: none;
 		border-radius: 0;
-		color: inherit;
+		color: inhrerit;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -1941,7 +1941,7 @@ input, select, textarea {
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #9bf1ff;
+			border-color: #7a898b;
 			box-shadow: 0 0 0 2px #9bf1ff;
 		}
 
@@ -3380,7 +3380,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/marble.png");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3401,7 +3401,7 @@ input, select, textarea {
 	}
 
 		#banner:after {
-			-moz-transition: opacity 2.5s ease;
+			-moz-transition: opacity 0.5s ease;
 			-webkit-transition: opacity 2.5s ease;
 			-ms-transition: opacity 2.5s ease;
 			transition: opacity 2.5s ease;
@@ -3410,7 +3410,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #d3cfcf;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3474,7 +3474,7 @@ input, select, textarea {
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.7em;
+					font-size: 0.9em;
 					font-weight: 600;
 					letter-spacing: 0.25em;
 					text-transform: uppercase;
@@ -3798,7 +3798,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(36, 41, 67, 0.9);
+		background: rgba(192, 193, 201, 0.9);
 		box-shadow: none;
 		height: 100%;
 		left: 0;

@@ -8,6 +8,7 @@ import WeightsIndex from '../views/WeightsIndex.vue'
 import WeightsNew from '../views/WeightsNew.vue'
 import SodiaIndex from '../views/SodiaIndex.vue'
 import SodiaNew from '../views/SodiaNew.vue'
+import SodiaShow from '../views/SodiaShow.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -58,7 +59,13 @@ const routes = [
     path: "/sodia/new",
     name: 'sodia-new',
     component: SodiaNew,
-  }
+  },
+  {
+    path: "/showsodia",
+    name: "sodia-show",
+    component: SodiaShow,
+  },
+
 
 ];
 

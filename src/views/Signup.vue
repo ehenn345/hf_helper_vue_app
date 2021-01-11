@@ -18,10 +18,6 @@
         <input type="integer" class="form-control" v-model="sodiumLimit">
       </div>
       <div class="form-group">
-        <label>Fluid Limit (ml)</label>
-        <input type="integer" class="form-control" v-model="fluidLimit">
-      </div>
-      <div class="form-group">
         <label>Password:</label>
         <input type="password" class="form-control" v-model="password">
       </div>
