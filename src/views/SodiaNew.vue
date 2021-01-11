@@ -8,9 +8,14 @@
       <p>Quantity: <input type="text" v-model="quantity"></p>
       <p>Measure: <input type="text" v-model="measure"></p>
       <p>Food: <input type="text" v-model="food"></p>
-      <p>Sodium (mg): <input type="text" v-model="input_sodium"></p>
+      <p>Sodium (mg): <input type="text" v-model="input_sodium" placeholder="leave blank if other fields filled out"></p>
       <p>Date: <input type="date" v-model="date" v-bind:style="{color: activeColor}"></p></form>
-      <button v-on:click="createSodia()">Submit</button>
+      <button v-on:click="createSodia()">Add Sodium Amount </button>
+      <br>
+      <br>
+      <a href="/showsodia">
+   <button>Click here for Sodium Calculator</button>
+</a>
   </div>
 </template>
 
