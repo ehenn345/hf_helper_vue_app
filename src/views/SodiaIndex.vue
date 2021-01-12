@@ -1,18 +1,17 @@
 <template>
-  <div class="sodia-index">
+  <div class="sodia-index" style="text-align:center">
     <!-- Main -->
      <input type="date" v-model="date" v-on:change="sodiumDate" v-bind:style="{color: activeColor}">
-    <p>{{ message }}</p>
+    <h4 style="color:grey">{{ message }}</h4>
     
 					<div id="main" class="alt">
 
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
-									<header class="major">
+									
                     <h1>Total sodium left: {{sodia[0] && sodia[0].user_sodium_limit - sodia[0].sodium_daily_total}}</h1>
-                    
-									</header>
+                
 									
                   <ul>
                     <h1>Daily total: {{sodia[0] && sodia[0].sodium_daily_total}} mg</h1>
@@ -20,7 +19,7 @@
                     <img v-else-if="sodia[0] && sodia[0].sodium_daily_total < sodia[0].user_sodium_limit" src="images/keepitup.jpg" alt="" />
                     <img v-else src="images/hfimage.jpg"></span>
                     <h2>Sodium entries:</h2>
-                    <li v-for="sodium in sodia">
+                    <li style="color:grey" v-for="sodium in sodia">
                        {{sodium.input_sodium}} ml</li></ul>
                        
 									<p></p>

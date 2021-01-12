@@ -8,11 +8,11 @@
       </ul>
       <div class="form-group">
         <label>Email:</label>
-        <input type="email" class="form-control" v-model="email">
+        <input type="email" class="form-control" v-model="email" style="background-color:lightgrey">
       </div>
       <div class="form-group">
         <label>Password:</label>
-        <input type="password" class="form-control" v-model="password">
+        <input type="password" class="form-control" v-model="password" style="background-color:lightgrey">
       </div>
       <input type="submit" class="btn btn-primary" value="Submit">
     </form>

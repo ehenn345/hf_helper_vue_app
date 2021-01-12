@@ -1,21 +1,21 @@
 <template>
   <div class="sodia-new">
-    <h1>Add sodium</h1>
-    <form v-on:submit.prevent="createSodia()">
+    <h1 style="text-align:center">Add sodium</h1>
+    <form style="text-align:center" v-on:submit.prevent="createSodia()">
       <ul>
         <li v-for="error in errors"> {{error}}</li>
       </ul>
-      <p>Quantity: <input type="text" v-model="quantity"></p>
-      <p>Measure: <input type="text" v-model="measure"></p>
-      <p>Food: <input type="text" v-model="food"></p>
-      <p>Sodium (mg): <input type="text" v-model="input_sodium" placeholder="leave blank if other fields filled out"></p>
-      <p>Date: <input type="date" v-model="date" v-bind:style="{color: activeColor}"></p></form>
-      <button v-on:click="createSodia()">Add Sodium Amount </button>
+      <p style="color:grey">Quantity: <input style="background-color:lightgrey" type="text" v-model="quantity" placeholder="enter an amount"></p>
+      <p style="color:grey">Measure: <input style="background-color:lightgrey" type="text" v-model="measure" placeholder="how much, what size?"></p>
+      <p style="color:grey">Food: <input style="background-color:lightgrey" type="text" v-model="food"></p>
+      <p style="color:grey">Sodium (mg): <input style="background-color:lightgrey" type="text" v-model="input_sodium" placeholder="leave blank if other fields filled out"></p>
+      <p style="color:grey">Date: <input type="date" v-model="date" v-bind:style="{color: activeColor}"></p></form>
+      <p style="text-align:center"><button v-on:click="createSodia()">Add Sodium Amount </button></p>
       <br>
       <br>
-      <a href="/showsodia">
-   <button>Click here for Sodium Calculator</button>
-</a>
+      <div style="text-align: center"><a href="/showsodia" class="button medium"
+   v-bind:style="{color: activeColor}">Click here for Sodium Calculator</a></div>
+
   </div>
 </template>
 
@@ -37,7 +37,7 @@ export default {
       quantity: "",
       measure: "",
       food: "",
-      activeColor: "black",
+      activeColor: "grey",
     };
   },
   created: function () {},

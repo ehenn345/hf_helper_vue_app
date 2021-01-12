@@ -20,8 +20,10 @@
 								
 								
 							</section>
-
-					</div>  
+ <div style="text-align: center">
+        <a href="/weights/new" class="button large">Add a weight</a></div>
+					</div> 
+           
   </div>
 </template>
 

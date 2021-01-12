@@ -1,14 +1,17 @@
 <template>
   <div class="weights-new">
     
-    <h1>Add a weight</h1>
-    <form v-on:submit.prevent="createWeight()">
+    <h1 style="text-align:center">Add a weight</h1>
+    <form style="text-align:center;color:grey" v-on:submit.prevent="createWeight()">
       <ul>
         <li v-for="error in errors"> {{error}}</li>
       </ul>
       <p>Weight (lbs): <input type="integer" v-model="current_weight" v-bind:style= "{color: activeColor}"></p>
       <p>Date: <input type="date" v-model="date" v-bind:style= "{color: activeColor}"></p></form>
-      <button v-on:click="createWeight()">Submit</button>
+      <p style="text-align:center">
+      <button v-on:click="createWeight()">Submit</button></p>
+      <div style="text-align: center">
+        <a href="/weights" class="button medium">Go to your weight tracker</a></div>
   </div>
 </template>
 

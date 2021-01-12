@@ -16,7 +16,6 @@
 									class="button">Log Out</a></li>
 								</ul>
 							</div>
-							<h1> Logged In? {{isLoggedIn()}}</h1>
 						</div>
 					</section>
   </div>
