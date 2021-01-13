@@ -1,8 +1,8 @@
 <template>
   <div class="sodia-show">
     <h1 style="text-align:center">Sodium Calculator</h1>
-    <h3 style="text-align:center" Enter information here to see how much sodium is in your food</h3>
-    <p> {{sodia.input_sodium}} </p>
+    <h3 style="text-align:center" Enter information here to see how much sodium is in your food></h3>
+    <!-- <p> {{sodia.input_sodium}} </p> -->
     <form style="text-align:center" v-on:submit.prevent="showSodia()">
       <ul>
         <li v-for="error in errors"> {{error}}</li>
@@ -14,7 +14,7 @@
       <p style="text-align:center"><button v-on:click="showSodia()">How Much Sodium?</button></p>
       <br>
       <div style="text-align: center">
-        <a href="/showsodia" class="button medium">Go to ADD SODIUM page</a></div>
+        <a href="/sodia/new" class="button medium">Go to ADD SODIUM page</a></div>
 
   </div>
 </template>
