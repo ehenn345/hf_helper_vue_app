@@ -10,7 +10,10 @@
 								<p>Welcome to your personal heart failure helper</p>
 								<ul class="actions">
 									<li v-if="!isLoggedIn()">
-									<a href="/login" class="button">Log In</a></li>
+									<a href="/login" class="medium button">Log In</a>
+									<br>
+									<br>
+									<a href="/signup" class="large button">Sign Up</a></li>
 									<li v-if=isLoggedIn()><a
 									href="/logout"
 									class="button">Log Out</a></li>

@@ -1,16 +1,16 @@
 <template>
   <div class="sodia-index" style="text-align:center">
     <!-- Main -->
-     <input type="date" v-model="date" v-on:change="sodiumDate" v-bind:style="{color: activeColor}">
+     <input type="date" v-model="date" v-on:change="sodiumDate" v-on:click.once='isDate = !isDate'  v-bind:style="{color: activeColor}">
     <h4 style="color:grey">{{ message }}</h4>
     
 					<div id="main" class="alt">
 
 						<!-- One -->
 							<section id="one">
-								<div class="inner">
+								<div class="inner" v-if="isDate">
 									
-                    <h1>Total sodium left: {{sodia[0] && sodia[0].user_sodium_limit - sodia[0].sodium_daily_total}}</h1>
+                    <h1>Total sodium left to consume: {{sodia[0] && sodia[0].user_sodium_limit - sodia[0].sodium_daily_total}} mg</h1>
                 
 									
                   <ul>
@@ -47,6 +47,7 @@ export default {
       date: "",
       activeColor: "black",
       muchoColor: "red",
+      isDate: false,
     };
   },
   created: function () {},

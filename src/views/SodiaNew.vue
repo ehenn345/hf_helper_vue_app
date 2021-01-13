@@ -12,7 +12,6 @@
       <p style="color:grey">Date: <input type="date" v-model="date" v-bind:style="{color: activeColor}"></p></form>
       <p style="text-align:center"><button v-on:click="createSodia()">Add Sodium Amount </button></p>
       <br>
-      <br>
       <div style="text-align: center"><a href="/showsodia" class="button medium"
    v-bind:style="{color: activeColor}">Click here for Sodium Calculator</a></div>
 
