@@ -10,11 +10,12 @@
 							<section id="one">
 								<div class="inner" v-if="isDate">
 									
-                    <h1>You can have this much sodium before you meet your limit: {{sodia[0] && sodia[0].user_sodium_limit - sodia[0].sodium_daily_total}} mg</h1>
-                
-									
+                    <h1>Your sodium difference: {{sodia[0] && sodia[0].user_sodium_limit - sodia[0].sodium_daily_total}} mg</h1>
+                    <p> If a negative number, you have gone over your limit </p>
+                    <br>
+									  <br>
                   <ul>
-                    <h1>You have eaten this much sodium today: {{sodia[0] && sodia[0].sodium_daily_total}} mg</h1>
+                    <h1>Total sodium consumed: {{sodia[0] && sodia[0].sodium_daily_total}} mg</h1>
                     <span class="image main"><img v-if="sodia[0] && sodia[0].sodium_daily_total > sodia[0].user_sodium_limit" src="images/too much salt.jpg" alt="" />
                     <img v-else-if="sodia[0] && sodia[0].sodium_daily_total < sodia[0].user_sodium_limit" src="images/keepitup.jpg" alt="" />
                     <img v-else src="images/hfimage.jpg"></span>
